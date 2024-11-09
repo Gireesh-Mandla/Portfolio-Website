@@ -1,0 +1,181 @@
+/* sections.css */
+
+/* Section Titles */
+.section-title {
+    font-size: 4.5em;
+    color: #f14b2e;
+    margin-bottom: 40px;
+}
+
+.section p {
+    font-size: 1.5em;
+    margin: 0 150px;
+}
+
+.section h1 {
+    margin-top: 80px;
+}
+
+.section h2 {
+    font-size: 2em;
+    color:rgb(104, 7, 104)
+}
+
+/* About Me Section */
+.aboutme {
+    background: url('images/AboutME.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    width: fit-content;
+    color: white;
+}
+@media(max-width: 768px){
+    .aboutme {
+        padding: 30px 10px;
+    }
+}
+
+.aboutme h1{
+    margin-bottom: 10px;
+}
+
+/*education section*/
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.side-image {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .image-row {
+        display: block;
+        gap:10px;
+    }
+    .side-image{
+        width:100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .side-image{padding:10px;}
+}
+
+
+
+/* Key Skills Section */
+.keyskills {
+    margin: 0 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    width: 500px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-content img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.card-content img:hover {
+    transform: scale(1.2);
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.hover-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.logo-container:hover .hover-text {
+    display: block;
+    opacity: 1;
+}
+
+/* Project Section */
+.project-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+.project-hover:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    
+}
+
+/* Certification Button */
+.certification-button {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 30px;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.certification-button:hover {
+    transform: scale(1.1);
+    color: #3e9af5;
+}
+

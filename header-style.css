@@ -1,0 +1,39 @@
+/* header.css */
+
+/* Header Section */
+header.landing-header {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    background: url('images/landing-page.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 6em;
+    color: #fca311; /* Distinct color for header title */
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6); /* Slightly stronger shadow for a bolder look */
+    font-family: 'Playfair Display', serif; 
+}
+
+.header-content p {
+    font-size: 2em;
+    color: #fff;
+}
+
+.header-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.header-buttons button:hover {
+    background-color: #0056b3;
+}
