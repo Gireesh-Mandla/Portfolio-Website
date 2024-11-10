@@ -98,14 +98,16 @@ window.addEventListener("load", function() {
 });
 
 
-// Function to prevent scrolling until the button is clicked
 function preventScroll(event) {
     event.preventDefault();
 }
 
 function scrollToSummary() {
-    // Re-enable vertical scrolling only
+    // Enable only vertical scrolling
     document.body.style.overflowY = "auto";
+    document.body.style.overflowX = "hidden"; // Ensure horizontal scroll remains disabled
+
+    // Remove scroll prevention listeners
     document.body.removeEventListener('wheel', preventScroll, { passive: false });
     document.body.removeEventListener('keydown', preventKeyScroll);
 
@@ -119,10 +121,11 @@ function preventKeyScroll(event) {
     }
 }
 
-// Disable vertical scrolling initially
+// Disable all scrolling initially
 document.body.style.overflow = "hidden";
 document.body.addEventListener('wheel', preventScroll, { passive: false });
 document.body.addEventListener('keydown', preventKeyScroll);
+
 
 
 
