@@ -60,3 +60,10 @@ nav ul li a:hover {
     color: #fff;
     overflow-x: hidden;
 }
+@media (max-width: 768px){
+    .section{width:100vw;}
+}
+
+@media (max-width: 480px){
+    .section{width: 100vw;}
+}
