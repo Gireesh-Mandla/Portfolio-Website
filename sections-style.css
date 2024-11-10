@@ -13,6 +13,19 @@
     font-size: 1.5rem;
     margin: 0 150px;
 }
+    /*Tablet - Between 481px and 768px */
+@media (max-width: 768px) {
+  .section p {
+    font-size: 1.25rem; /* Font size for tablet */
+  }
+}
+
+/* Mobile - Below 481px */
+@media (max-width: 480px) {
+  .section p {
+    font-size: 1rem; /* Font size for mobile */
+  }
+}
 
 .section h2 {
     font-size: 2rem;
