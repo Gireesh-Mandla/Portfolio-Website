@@ -10,7 +10,7 @@
 }
 
 .section p {
-    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-size: 3vw;
     margin: 0 150px;
 }
 
