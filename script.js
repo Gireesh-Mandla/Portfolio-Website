@@ -120,7 +120,7 @@ function preventKeyScroll(event) {
 }
 
 // Disable vertical scrolling initially
-document.body.style.overflowY = "hidden";
+document.body.style.overflow = "hidden";
 document.body.addEventListener('wheel', preventScroll, { passive: false });
 document.body.addEventListener('keydown', preventKeyScroll);
 
