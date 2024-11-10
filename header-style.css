@@ -20,7 +20,7 @@ header.landing-header {
 }
 
 .header-content h1 {
-    font-size: 5rem;
+    font-size:  clamp( 3rem, 5vw, 6rem);
     color: #fca311; /* Distinct color for header title */
     text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6); /* Slightly stronger shadow for a bolder look */
     font-family: 'Playfair Display', serif; 
