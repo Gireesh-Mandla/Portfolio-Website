@@ -104,8 +104,8 @@ function preventScroll(event) {
 }
 
 function scrollToSummary() {
-    // Re-enable scrolling
-    document.body.style.overflow = "auto";
+    // Re-enable vertical scrolling only
+    document.body.style.overflowY = "auto";
     document.body.removeEventListener('wheel', preventScroll, { passive: false });
     document.body.removeEventListener('keydown', preventKeyScroll);
 
@@ -119,10 +119,11 @@ function preventKeyScroll(event) {
     }
 }
 
-// Disable scrolling initially
-document.body.style.overflow = "hidden";
+// Disable vertical scrolling initially
+document.body.style.overflowY = "hidden";
 document.body.addEventListener('wheel', preventScroll, { passive: false });
 document.body.addEventListener('keydown', preventKeyScroll);
+
 
 
 
