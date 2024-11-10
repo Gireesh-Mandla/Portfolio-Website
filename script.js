@@ -97,7 +97,7 @@ window.addEventListener("load", function() {
     document.getElementById("home").scrollIntoView({ behavior: "smooth" });
 });
 
-
+//disabling the overflow for entire body and html until the button is clicked
 function preventScroll(event) {
     event.preventDefault();
 }
@@ -105,11 +105,15 @@ function preventScroll(event) {
 function scrollToSummary() {
     // Enable only vertical scrolling
     document.body.style.overflowY = "auto";
-    document.body.style.overflowX = "hidden"; // Ensure horizontal scroll remains disabled
+    document.body.style.overflowX = "hidden"; // Ensures horizontal scroll remains disabled
+    document.documentElement.style.overflowY = "auto"; // Also apply to <html>
+    document.documentElement.style.overflowX = "hidden"; // Also apply to <html>
 
     // Remove scroll prevention listeners
     document.body.removeEventListener('wheel', preventScroll, { passive: false });
     document.body.removeEventListener('keydown', preventKeyScroll);
+    document.documentElement.removeEventListener('wheel', preventScroll, { passive: false });
+    document.documentElement.removeEventListener('keydown', preventKeyScroll);
 
     // Smooth scroll to the summary section
     document.getElementById('summary').scrollIntoView({ behavior: 'smooth' });
@@ -123,9 +127,13 @@ function preventKeyScroll(event) {
 
 // Disable all scrolling initially
 document.body.style.overflow = "hidden";
+document.documentElement.style.overflow = "hidden"; // Apply to <html> as well
+
+// Add event listeners to prevent scrolling with mouse wheel and arrow keys
 document.body.addEventListener('wheel', preventScroll, { passive: false });
 document.body.addEventListener('keydown', preventKeyScroll);
-
+document.documentElement.addEventListener('wheel', preventScroll, { passive: false });
+document.documentElement.addEventListener('keydown', preventKeyScroll);
 
 
 
