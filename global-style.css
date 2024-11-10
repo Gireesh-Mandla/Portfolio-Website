@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 
-body,html{
+body, html{
     width: 100%;
     overflow-x: hidden;
 }
