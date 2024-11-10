@@ -10,6 +10,7 @@ header.landing-header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
 }
 @media (max-width: 768px){
     .landing-header{width:100vw;}
