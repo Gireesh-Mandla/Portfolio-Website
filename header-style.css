@@ -20,14 +20,14 @@ header.landing-header {
 }
 
 .header-content h1 {
-    font-size: 5vw;
+    font-size: 5rem;
     color: #fca311; /* Distinct color for header title */
     text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6); /* Slightly stronger shadow for a bolder look */
     font-family: 'Playfair Display', serif; 
 }
 
 .header-content p {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #fff;
 }
 
