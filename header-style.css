@@ -3,13 +3,20 @@
 /* Header Section */
 header.landing-header {
     width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
     height: 100vh;
     background: url('images/landing-page.webp') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+@media (max-width: 768px){
+    .landing-header{width:100vw;}
+}
+
+@media (max-width: 480px){
+    .landing-header{width: 100vw;}
 }
 
 .header-content h1 {
